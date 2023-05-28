@@ -7,6 +7,7 @@ struct ArrayVector *vec_new()
     struct ArrayVector *vec = malloc(sizeof(struct ArrayVector) * 1);
     vec->size = 0;
     vec->capacity = 2;
+    // initialiaze for 2 elements
     vec->array = malloc(sizeof(int) * 2);
     return vec;
 }
